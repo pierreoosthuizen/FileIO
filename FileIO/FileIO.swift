@@ -28,7 +28,7 @@ open class FileIO: NSObject
         {
             arrayRecords = NSArray(contentsOf: fileURL)! as! [String]
         }
-        
+    
         return (arrayRecords)
     }
     
