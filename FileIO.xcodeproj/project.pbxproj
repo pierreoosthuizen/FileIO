@@ -93,12 +93,12 @@
 		C14E45ED21BEFA9600710CF0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Pieter C. Oosthuizen";
 				TargetAttributes = {
 					C14E45F521BEFA9600710CF0 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -108,6 +108,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C14E45EC21BEFA9600710CF0;
 			productRefGroup = C14E45F721BEFA9600710CF0 /* Products */;
@@ -286,8 +287,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -314,8 +314,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pietercoosthuizen.FileIO;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
