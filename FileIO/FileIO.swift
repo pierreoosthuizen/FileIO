@@ -20,7 +20,7 @@ open class FileIO: NSObject
      
      - Returns: A new string array containing all the values from the file.
      */
-    public func readDataArrayFromFile(plistFile: String)-> [String]
+    public func readPListArray(plistFile: String)-> [String]
     {
         var arrayRecords: [String] = []
         
@@ -39,7 +39,7 @@ open class FileIO: NSObject
      
      - Returns: A new dictionary containing all the values from the file.
      */
-    public func readDataDictionaryFromFile(plistFile: String) -> NSDictionary
+    public func readPListDictionary(plistFile: String) -> NSDictionary
     {
         var dictRecords: NSDictionary = [:]
         
@@ -58,7 +58,7 @@ open class FileIO: NSObject
      
      - Returns: A new array or dictionary containing all the values from the file.
      */
-    public func readDataFromPList<T>(dataFile: String) -> T
+    public func readPList<T>(dataFile: String) -> T
     {
         let fileURL = Bundle.main.url(forResource: dataFile, withExtension: "plist")
         let fileContent: T = NSDictionary(contentsOf: fileURL!) as! T
